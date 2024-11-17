@@ -157,7 +157,7 @@
     "vite-plugin-eslint": "^1.8.1"
   },
   "optionalDependencies": {
-    "@rollup/rollup-darwin-arm64": "4.24.0"
+    "@rollup/rollup-darwin-arm64": "4.27.2"
   },
   "browserslist": {
     "production": [

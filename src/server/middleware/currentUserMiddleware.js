@@ -54,9 +54,9 @@ const currentUserMiddleware = async (req, _, next) => {
   const isNoAdPath = req.path.startsWith('/noad')
   req.noad = isNoAdPath
 
-  const username = isNoAdPath ? getUsernameFromToken(req) : getUsernameFromShibboHeaders(req)
+  // const username = isNoAdPath ? getUsernameFromToken(req) : getUsernameFromShibboHeaders(req)
 
-  req.user = await getUserByUsername(username)
+  req.user = await getUserByUsername(/* PLEASE ENTER A USERNAME FROM THE USER-TABLE HERE */)
 
   req.user.iamGroups = req.iamGroups
   await req.user.populateAccess()

@@ -29,6 +29,8 @@ services:
     image: redis:6.2.16
     command: redis-server
     container_name: palaute_test_redis
+    ports:
+      - 6379:6379
 
   db:
     image: postgres:15.8
